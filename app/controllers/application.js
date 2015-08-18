@@ -7,4 +7,12 @@ export default Ember.Controller.extend({
 
 	// 	Ember.$('.banner-bk').css("background-image", src);
 	// }.on('init')
+
+	
+	myStickyOptions: {
+	   topSpacing: -87, //px, default: 0
+	   wrapperClassName: 'main-nav'
+    },
+	
+
 });

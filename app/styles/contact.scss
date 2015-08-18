@@ -3,8 +3,9 @@
   width: 100%;
   margin-top: -1%;
 }
+
+
 #contactComponentWrapper{
-  margin-bottom: 50px;
   .section-title{
     margin-top: 90px;
   }
@@ -44,7 +45,7 @@
 
 .contact-form-wrapper{
   margin-top: 50px;
-
+  margin-bottom: 100px;
   input{
     border-radius: 5px;
     font-size: 18px;
@@ -77,6 +78,14 @@
     font-weight: 300;
     font-size: 18px;
   }
+}
+
+#contactWrapper {
+  
+
+  .section-title {
+    margin-top: 250px;
+    }
 }
 
 

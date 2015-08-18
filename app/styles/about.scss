@@ -42,6 +42,7 @@
 #aboutOurFamilyWrapper{
 	background: url('/assets/images/our-family-bk.jpg');
 	width: 100%;
+	text-align: center;
 
 	.section-title{
 		margin-top: 100px;
@@ -51,5 +52,18 @@
 		width: 100%;
 		margin-top: 50px;
 		opacity: 0.3;
+	}
+
+	button{
+		background: rgb(160, 182, 30);
+		color: rgb(255, 255, 255);
+		font-size: 14px;
+		padding: 12px 30px;
+		border: rgb(255, 255, 255);
+		border-image-source: initial;
+		border-image-slice: initial;
+		border-image-width: initial;
+		border-image-outset: initial;
+		border-image-repeat: initial;
 	}
 }

@@ -2,42 +2,14 @@
 	<div id="catalogBanner">
 		<div class="row">
 			<div class="container">
-				<div class="col-sm-12">
-					<div class="catalog-banner-title">
-						<h3>Top Product</h3>
-						<h1>Categories</h1>
-					</div>
-					<div class="catalog-banner-categories-wrapper">
-						<ul class="list-catalog-banner-categories">
-							<li>
-								<img src="/assets/images/products/small/sea-salt-chips.png">
-								<p>Salty Snacks</p>
-							</li>
-							<li>
-								<img src="/assets/images/products/small/oil-big.png">
-								<p>Cooking Oil</p>
-							</li>
-							<li>
-								<img src="/assets/images/products/small/condensed-milk.png">
-								<p>Canned Milk</p>
-							</li>
-							<li>
-								<img src="/assets/images/products/small/white-rice.png">
-								<p>Rice</p>
-							</li>
-
-                            <li>
-                                <img src="/assets/images/products/small/white-sugar.png">
-                                <p>Sugar Products</p>
-                            </li>
-                            <li>
-                                <img src="/assets/images/products/small/elbows.png">
-                                <p>Pasta</p>
-                            </li>
-
-						</ul>
-					</div>
-				</div>
+                <div class="col-md-12">
+                    <div class="catalog-banner-title">
+                        <h2>Our Products</h2>
+                        <div class="section-title-underline"></div>
+                        <p>Check out our line up of products below!</p>
+                    </div>
+                
+                </div>
 			</div>
 		</div>
 	</div>
@@ -48,11 +20,11 @@
 			<div class="container">
 				<div class="col-md-10 col-md-offset-1">
 					<div class="section-title">
-						<h2>Our Products</h2>
+						<h2>About Our Foods</h2>
 						<div class="section-title-underline"></div>
 					</div>
 					<div class="section-content">
-						<p class="italic">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+						<p class="italic">Food is the universal language for friendship and love. We pride ourselves in knowing that we produce the highest quality products that showcase the best flavors Latin America has to offer. Our goal is to share these exquisite flavors with you as you sit around the table with the company of those you hold dear to your heart.</p>
 
 						<div class="gmo-free-badges-wrapper">
 							<div class="row">
@@ -80,11 +52,11 @@
                             {{#if product.isExtended}}
                                 <div class="expanded-product-wrapper">
                                     <div class="col-md-12">
-                                        <div {{action "contract" on="keyPress"}}>
-                                            <i class="glyphicon glyphicon-envelope"></i>
+                                        <div {{action "displayProductInfo" product on="click"}}>
+                                            <i class="glyphicon glyphicon-remove"></i>
                                         </div>
                                         <div class="col-md-4">
-                                            <div {{action "displayProductInfo" product on="click"}} class="ind-product-wrapper">
+                                            <div class="ind-product-wrapper">
                                                 <img src="{{product.productImg}}"><br/>
                                                 <img class="thumbnailImage" src="{{product.productImg}}">
                                                 <img class="thumbnailImage" src="{{product.labelImg}}">
@@ -104,7 +76,7 @@
                             {{else}}
                                 <div class="col-md-4">
                                     <div {{action "displayProductInfo" product on="click"}} class="ind-product-wrapper">
-                                        <div {{action "product.expand" on="keyPress"}}> 
+                                        <div> 
                                             <img src="{{product.productImg}}" >
                                             <h5>{{product.engName}}</h5>
                                             <p>{{product.spaName}}<br/>{{product.quantity}}</p>

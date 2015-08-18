@@ -12,19 +12,31 @@
 		margin-top: 20%;
     cursor: pointer;
 
-		h3, h1{
+		h2{
 			font-family: 'Amatic SC', cursive;
 		}
 
-		h3{
-			font-size: 35px;
-		}
-
-		h1{
+		h2{
 			font-size: 65px;
 			color: #fff;
 			margin-top: -1%;
 		}
+    p{
+      margin-top: 3%;
+      color: #fff;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 220%;
+      text-align: center;
+    }
+    .section-title-underline{
+      background: #e6f87f;
+      height: 3px;
+      width: 120px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 	}
 
 	.list-catalog-banner-categories{
@@ -64,6 +76,12 @@
 
 .expanded-product-wrapper {
   padding-bottom: 70px;
+
+  i{
+    float: right;
+    font-size: 18px;
+    padding: 15px;
+  }
 }
 
 .product-info-wrapper {

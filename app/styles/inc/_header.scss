@@ -6,7 +6,49 @@ $box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 	position: absolute;
 	width: 100%;
 	z-index: 99;
+
+	.sticky {
+	width: 100%;
+	}
 }
+
+.is-sticky nav.main-nav .nav-brand img {
+background: rgba(0,0,0,0);
+width: 83px;
+height: 83px;
+padding: 5px;
+border-radius: 50%;
+}
+
+.is-sticky nav.main-nav .nav-brand {
+margin-top: 0;
+}
+
+#socialMediaIconsWrapper {
+
+		right: 25px;
+		position: fixed;
+		bottom: 0;
+		z-index: 99999;
+		
+		div{
+			border-radius: 100%; 
+			margin: 15px;
+			float: left;
+		}
+		#fbIcon{
+			background: #44619D;
+		}
+		#pinterestIcon{
+			background: #D11E16;
+		}
+		#instagramIcon{
+			background: #EAD9C4;
+		}
+
+
+}
+
 nav.main-nav{
 	height: 80px;
 	background: $nav-bk;
@@ -16,9 +58,13 @@ nav.main-nav{
 	z-index: 99;
 
 	.nav-brand{
+		-webkit-transition: 1s; /* Safari */
+    	transition: 1s;
 		margin-top: -15%;
 		margin-left: 20%;
 		img{
+			-webkit-transition: 1s; /* Safari */
+    		transition: 1s;
 			background: $nav-bk;
 			width: 180px;
 			height: 180px;
