@@ -1,5 +1,5 @@
 {
-  "name": "del-sur",
+  "name": "del-sur-beta",
   "root": "./dist",
   "routes": {
     "/tests": "tests/index.html",
