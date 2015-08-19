@@ -20,8 +20,9 @@ h1,h2,h3,h4,h5,h6,p,td,span,a,li{
 /* INDEX */
 /******************************/
 #mainBanner{
-	background: url('/assets/images/main-bg.jpg');
+	position: absolute;
   	width: 100%;
+  	z-index: 999;
   	height: 869px;
 	background-position:center -211px;
 

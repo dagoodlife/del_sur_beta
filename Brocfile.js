@@ -4,6 +4,9 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp();
 
+app.import('bower_components/slider-revolution/src/js/jquery.themepunch.revolution.js');
+app.import('bower_components/slider-revolution/src/js/jquery.themepunch.plugins.min.js');
+
 app.import('bower_components/bootstrap/dist/css/bootstrap.css');
 app.import('bower_components/bootstrap/dist/js/bootstrap.js');
 
